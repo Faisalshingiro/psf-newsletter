@@ -89,13 +89,25 @@ export default function Hero() {
 
 export function Stats() {
   return (
-    <section className="stats">
-      {stats.map((s) => (
-        <div className="stat-card" key={s.label}>
-          <strong>{s.value}</strong>
-          <span>{s.label}</span>
-        </div>
-      ))}
+    <section className="mx-auto mt-12 grid max-w-7xl grid-cols-2 gap-4 px-6 sm:gap-5 sm:px-8 lg:grid-cols-4 lg:px-12">
+      {stats.map((s, i) => {
+        const accent = i % 2 === 1
+        return (
+          <div
+            key={s.label}
+            className="group relative overflow-hidden rounded-2xl border border-black/5 bg-white p-5 shadow-[0_18px_40px_-10px_rgba(0,53,30,0.28)] ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-[0_26px_55px_-12px_rgba(0,53,30,0.4)] sm:p-6"
+          >
+            <strong
+              className={`block text-4xl font-extrabold leading-none tracking-tight sm:text-5xl ${accent ? 'text-psf-orange' : 'text-psf-green'}`}
+            >
+              {s.value}
+            </strong>
+            <span className="mt-3 block text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500 sm:text-xs">
+              {s.label}
+            </span>
+          </div>
+        )
+      })}
     </section>
   )
 }
