@@ -7,7 +7,7 @@ export const meta = {
   title: 'Expo 2026',
   titleAccent: 'A celebration of business, innovation, partnership & possibility',
   dek: 'Reflecting on the people, businesses, ideas and moments that made Expo 2026 memorable.',
-  heroImage: '/1A.jpg',
+  heroImage: 'https://www.kigalitoday.com/IMG/jpg/bk_expo.jpg',
   heroCaption: 'Expo 2026 at the Gikondo Expo Grounds — where business and community came together.'
 }
 
@@ -278,7 +278,7 @@ export const sections = [
       'Their stands provided services and information that visitors were interested in accessing, making them some of the busiest points at the Expo.',
       'The visitor experience, the services offered and the value delivered are what drew people to the stands throughout Expo 2026.'
     ],
-    tags: ['NIDA', 'Irembo']
+    // tags: ['NIDA', 'Irembo']
   },
   {
     id: 'innovation',

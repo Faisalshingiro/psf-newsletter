@@ -9,7 +9,7 @@ export default function Story({ data }) {
   } = data
 
   return (
-    <article ref={ref} className="story reveal" id={id}>
+    <article ref={ref} className={`story story-${id} reveal`} id={id}>
       <div className="story-index">{no}</div>
       <div className="story-content">
         <div className="story-kicker">{kicker}</div>

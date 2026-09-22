@@ -1,3 +1,16 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-psf-green: #0d5c33;
+  --color-psf-green-deep: #0a3d22;
+  --color-psf-green-darker: #072d19;
+  --color-psf-gold: #f6b721;
+  --color-psf-gold-soft: #f5c94a;
+  --color-psf-orange: #f28c28;
+  --color-psf-cream: #eef4ef;
+  --font-sans: 'Poppins', system-ui, Arial, sans-serif;
+}
+
 :root {
   --green: #006b3f;
   --green-2: #004d2c;
@@ -597,6 +610,19 @@ main {
 
 .story-media.pair img {
   height: 300px;
+}
+
+.story-youth .story-media img,
+.story-busy .story-media img,
+.story-innovation .story-media img,
+.story-longest .story-media img,
+.story-ev .story-media img,
+.story-leadership .story-media img,
+.story-future .story-media img,
+.story-investment .story-media img,
+.story-green .story-media img {
+  height: auto;
+  object-fit: contain;
 }
 
 /* stat highlight */
