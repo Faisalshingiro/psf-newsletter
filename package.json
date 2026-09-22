@@ -1,0 +1,20 @@
+{
+  "name": "psf-expo-2026-newsletter",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PSF Expo 2026 Newsletter — a professional React newsletter for the Private Sector Federation Rwanda.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

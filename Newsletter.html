@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSF Expo 2026 Newsletter</title>
+  <style>
+    :root {
+      --green: #006b3f;
+      --green2: #004d2c;
+      --orange: #f28c28;
+      --gold: #f5b335;
+      --ink: #17322a;
+      --muted: #60736c;
+      --cream: #f7f5ef;
+      --white: #fff
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: #eef2ef;
+      color: var(--ink);
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      line-height: 1.6
+    }
+
+    a {
+      color: inherit
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, .08)
+    }
+
+    .topbar {
+      height: 8px;
+    }
+
+    header {
+      background: var(--green);
+      color: white;
+      padding: 24px 6%;
+      position: relative;
+      overflow: hidden
+    }
+
+    header:after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border: 38px solid rgba(242, 140, 40, .9);
+      border-radius: 50%;
+      right: -120px;
+      top: -150px
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: .08em;
+      font-size: 14px
+    }
+
+    .eyebrow {
+      margin-top: 46px;
+      color: #d9eee4;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 78px);
+      line-height: .95;
+      margin: 12px 0 20px;
+      max-width: 850px;
+      letter-spacing: -.045em
+    }
+
+    .dek {
+      font-size: 20px;
+      max-width: 730px;
+      color: #e9f4ef
+    }
+
+    .hero-image {
+      margin-top: 30px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      background: #123
+    }
+
+    .hero-image img {
+      display: block;
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      opacity: .94
+    }
+
+    .image-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 14px 18px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, .78));
+      color: #fff;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .07em
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 18px;
+      margin-top: 28px
+    }
+
+    .photo-grid img,
+    .feature-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .feature-image {
+      min-height: 280px;
+      position: relative;
+      overflow: hidden;
+      background: #eee
+    }
+
+    .feature-image.tall {
+      min-height: 390px
+    }
+
+    .photo-grid .photo-tile {
+      position: relative;
+      min-height: 280px;
+      overflow: hidden;
+      background: #eee
+    }
+
+    .photo-label {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 28px 18px 14px;
+      color: #fff;
+      background: linear-gradient(transparent, rgba(0, 0, 0, .78));
+      font-weight: 700
+    }
+
+    .photo-credit {
+      font-size: 10px;
+      color: #77857f;
+      margin-top: 7px
+    }
+
+    .hero {
+      padding: 0 6% 34px;
+      background: var(--green)
+    }
+
+    .hero-card {
+      background: var(--cream);
+      padding: 34px 5%;
+      display: flex;
+      gap: 30px;
+      align-items: flex-end;
+      justify-content: space-between
+    }
+
+    .hero-card h2 {
+      font-size: 30px;
+      margin: 0 0 8px;
+      color: var(--green2)
+    }
+
+    .hero-card p {
+      margin: 0;
+      color: var(--muted)
+    }
+
+    .stat {
+      min-width: 170px;
+      text-align: center;
+      border-left: 1px solid #d7ddd8;
+      padding-left: 25px
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 44px;
+      color: var(--orange);
+      line-height: 1
+    }
+
+    .stat span {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em
+    }
+
+    nav {
+      padding: 34px 6%;
+      border-bottom: 1px solid #e5e9e6
+    }
+
+    nav h3 {
+      margin: 0 0 14px;
+      color: var(--green);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .12em
+    }
+
+    .toc {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 9px 18px;
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    main {
+      padding: 42px 6%
+    }
+
+    .section {
+      padding: 42px 0;
+      border-bottom: 1px solid #e7ebe8
+    }
+
+    .section:last-child {
+      border-bottom: 0
+    }
+
+    .kicker {
+      color: var(--orange);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: .13em
+    }
+
+    h2 {
+      font-size: 34px;
+      line-height: 1.1;
+      margin: 7px 0 10px;
+      color: var(--green2)
+    }
+
+    h3 {
+      font-size: 22px;
+      margin: 0 0 8px
+    }
+
+    .lead {
+      font-size: 18px;
+      color: #42564f;
+      max-width: 800px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 24px
+    }
+
+    .card {
+      background: #f7f8f6;
+      border-top: 4px solid var(--green);
+      padding: 22px
+    }
+
+    .card.orange {
+      border-top-color: var(--orange)
+    }
+
+    .card p {
+      margin: 8px 0 0;
+      color: #52645e
+    }
+
+    .quote {
+      margin: 25px 0;
+      padding: 24px 28px;
+      background: var(--green);
+      color: #fff;
+      font-size: 23px;
+      line-height: 1.4;
+      font-weight: 600
+    }
+
+    .quote small {
+      display: block;
+      font-size: 12px;
+      margin-top: 12px;
+      color: #d5ebe1;
+      font-weight: 400
+    }
+
+    .photo {
+      min-height: 190px;
+      background: linear-gradient(135deg, #dfe9e3, #f6efe3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #71837b;
+      text-align: center;
+      padding: 20px;
+      margin-top: 18px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px
+    }
+
+    .pill {
+      background: var(--cream);
+      padding: 20px
+    }
+
+    .pill b {
+      display: block;
+      color: var(--green);
+      font-size: 24px
+    }
+
+    footer {
+      background: var(--green2);
+      color: #fff;
+      padding: 42px 6%
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px
+    }
+
+    .footer-title {
+      font-size: 28px;
+      font-weight: 800
+    }
+
+    .footer-note {
+      color: #cfe3da;
+      margin-top: 8px
+    }
+
+    .footer-contact {
+      text-align: right;
+      color: #d8ebe4
+    }
+
+    @media(max-width:760px) {
+      .hero-image img {
+        height: 260px
+      }
+
+      .photo-grid {
+        grid-template-columns: 1fr !important
+      }
+
+      .hero-card,
+      .footer-grid {
+        display: block
+      }
+
+      .stat {
+        border: 0;
+        border-top: 1px solid #d7ddd8;
+        margin-top: 24px;
+        padding: 20px 0 0
+      }
+
+      .toc {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .grid,
+      .timeline {
+        grid-template-columns: 1fr
+      }
+
+      .footer-contact {
+        text-align: left;
+        margin-top: 25px
+      }
+
+      h1 {
+        font-size: 48px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="topbar"></div>
+    <header>
+      <div class="brand"><img src="PSF LOGO.png" alt="" width="8%">
+      </div>
+      <div class="eyebrow">PSF Expo 2026 Newsletter</div>
+      <h1>Business, Innovation<br>Connection.<br>voice for business.</h1>
+      <p class="dek">Reflecting on the people, businesses, ideas and moments that made Expo 2026 memorable.</p>
+      <div class="hero-image">
+        <img src="https://www.kigalitoday.com/IMG/jpg/bk_expo.jpg"
+          alt="Visitors walking through an exhibition at Gikondo Expo Grounds">
+        <div class="image-caption">Expo atmosphere at Gikondo — businesses, visitors and discovery in one place.</div>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero-card">
+        <div>
+          <h2>Expo 2026: a celebration of possibility</h2>
+          <p>A meeting point for businesses, entrepreneurs, innovators, investors, families and the wider community.</p>
+        </div>
+        <div class="stat"><strong>500+</strong><span>Exhibitors</span></div>
+        <div class="stat"><strong>20+</strong><span>Countries represented</span></div>
+      </div>
+    </div>
+    <nav>
+      <h3>Inside this issue</h3>
+      <div class="toc">
+        <a href="#marked">01 What marked Expo 2026</a><a href="#countries">02 First-time countries</a><a
+          href="#longest">03 27 years of showing up</a><a href="#exhibitors">04 Exhibitors</a>
+        <a href="#ev">05 Electric cars</a><a href="#food">06 Food & fun fair</a><a href="#music">07 Musical
+          performances</a><a href="#staff">08 PSF staff</a>
+        <a href="#turnup">09 General turnup</a><a href="#leadership">10 PSF leadership</a><a href="#security">11
+          Security organs</a><a href="#beauty">12 Beauty & personal care</a>
+        <a href="#future">13 Expo 2027 & 30 years</a><a href="#investment">14 New opportunities</a><a href="#youth">15
+          Youth jobs</a><a href="#conduct">16 Good conduct</a>
+        <a href="#busy">17 Busiest stands</a><a href="#innovation">18 Innovation</a><a href="#children">19 Children's
+          corner</a><a href="#green">20 Green economy</a>
+      </div>
+    </nav>
+    <main>
+      <section class="section" id="marked">
+        <div class="kicker">01 / The big picture</div>
+        <h2>What marked Expo 2026</h2>
+        <p class="lead">Expo 2026 was more than an exhibition. It brought together businesses, entrepreneurs,
+          innovators, investors, families, young people and members of the wider community.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Business meets community</h3>
+            <p>Exhibitors showcased products and services, connected with potential customers and built relationships
+              across Rwanda's private sector.</p>
+          </div>
+          <div class="card orange">
+            <h3>A platform for growth</h3>
+            <p>Business exhibitions, electric vehicles, food, entertainment, innovation and children's activities
+              created a space where business and community came together.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="visuals">
+        <div class="kicker">Expo in pictures</div>
+        <h2>People. Places. Possibility.</h2>
+        <p class="lead">The Expo experience is as visual as it is commercial — from exhibition walkways and innovation
+          booths to electric mobility and the energy of the crowd.</p>
+        <div class="photo-grid">
+          <div class="photo-tile">
+            <img src="https://s3.innovaterwanda.rw/public.drive/cloudinary/images/20251016T073741_1sfrqt345j.jpg"
+              alt="Innovation exhibition booth in Rwanda">
+            <div class="photo-label">Innovation taking centre stage</div>
+          </div>
+          <div class="photo-tile">
+            <img src="https://www.newtimes.co.rw/uploads/imported_images/files/main/articles/2019/11/22/0l8a6570.jpg"
+              alt="Electric vehicle charging demonstration in Rwanda">
+            <div class="photo-label">Electric mobility</div>
+          </div>
+        </div>
+        <div class="photo-grid" style="grid-template-columns:1fr 2fr;margin-top:18px">
+          <div class="photo-tile">
+            <img
+              src="https://www.newtimes.co.rw/uploads/imported_images/files/main/articles/2020/12/08/parents-look-how-their-children-playing-l-at-gikondo-expo-ground-last-year.children-below-12-years-not-allowed-in-expo-2020-sam-ngendahimana-.jpg"
+              alt="Children enjoying a family activity at Gikondo Expo Grounds">
+            <div class="photo-label">A place for families</div>
+          </div>
+          <div class="photo-tile">
+            <img src="https://www.kigalitoday.com/IMG/jpg/bk_expo.jpg" alt="Visitors at Kigali Expo">
+            <div class="photo-label">A meeting point for business and community</div>
+          </div>
+        </div>
+        <p class="photo-credit">Visuals: Kigali Today, The New Times and Innovate Rwanda. Some photographs are
+          archival/illustrative and are not presented as photographs from Expo 2026 unless explicitly identified.</p>
+      </section>
+
+      <section class="section" id="countries">
+        <div class="kicker">02 / New faces</div>
+        <h2>New markets, new opportunities</h2>
+        <p class="lead">Ethiopia and Senegal participated in the Expo for the first time, adding a new dimension of
+          regional and continental interaction.</p>
+      </section>
+
+      <section class="section" id="longest">
+        <div class="kicker">03 / A remarkable journey</div>
+        <h2>27 years of showing up</h2>
+        <p class="lead">Among Expo's long-standing participation stories is a lady from Ghana who has participated for
+          27 years—a story of consistency, relationships, trust and the enduring value of participation.</p>
+      </section>
+
+      <section class="section" id="exhibitors">
+        <div class="kicker">04 / Recognition</div>
+        <h2>Businesses that stood out</h2>
+        <p class="lead">Expo 2026 brought together exhibitors from different sectors. The best-performing exhibitors
+          story celebrates businesses that made a strong impression through presentation, customer engagement,
+          innovation and product offering.</p>
+        <div class="feature-image"><img src="https://pbs.twimg.com/media/Gyswx_IW0AIZLfs.jpg"
+            alt="Rwanda International Trade Fair award presentation"></div>
+        <p class="photo-credit">Awarding ceremony image from Roba Industries; shown as an Expo awards visual.</p>
+      </section>
+
+      <section class="section" id="ev">
+        <div class="kicker">05 / Mobility</div>
+        <h2>Driving towards a more sustainable future</h2>
+        <p class="lead">The exhibition of electric cars gave visitors a closer look at emerging mobility solutions and
+          brought innovation, sustainability and cleaner transportation into the public conversation.</p>
+        <div class="feature-image tall"><img
+            src="https://cdnx.premiumread.com/?f=webp&q=85&url=https%3A%2F%2Fnewtimes.co.rw%2Fthenewtimes%2Fuploads%2Fimages%2F2026%2F06%2F27%2F109214.jpg&w=1992"
+            alt="Electric vehicles displayed in Rwanda"></div>
+        <p class="photo-credit">Illustrative EV image from The New Times, 2026.</p>
+      </section>
+
+      <section class="section" id="food">
+        <div class="kicker">06 / Experience</div>
+        <h2>Where business met fun</h2>
+        <p class="lead">Food vendors and the fun fair added another dimension to Expo 2026, creating memorable
+          experiences alongside business meetings and product displays.</p>
+      </section>
+
+      <section class="section" id="music">
+        <div class="kicker">07 / Culture</div>
+        <h2>Music that brought the Expo to life</h2>
+        <p class="lead">Musical performances created moments for visitors to come together and celebrate. Special credit
+          goes to Pemcam for organizing the performances.</p>
+        <p><strong>Performances included:</strong> Riderman, Bushali, Kenny Sol and Zeo Trap.</p>
+      </section>
+
+      <section class="section" id="staff">
+        <div class="kicker">08 / Behind the scenes</div>
+        <h2>The PSF staff understood the assignment</h2>
+        <p class="lead">Behind every successful Expo is a team working before, during and after the event. PSF staff
+          coordinated exhibitors, activities and stakeholders, helping create the experience visitors encountered on the
+          ground.</p>
+      </section>
+
+      <section class="section" id="turnup">
+        <div class="kicker">09 / The people came through</div>
+        <h2>A strong general turnout</h2>
+        <p class="lead">Businesses, families, young people, entrepreneurs, consumers and visitors joined nearly 500
+          exhibitors from over 20 countries, turning the Expo grounds into a busy meeting point for business and
+          community.</p>
+      </section>
+
+      <section class="section" id="leadership">
+        <div class="kicker">10 / Leadership perspective</div>
+        <h2>A platform for business growth</h2>
+        <div class="quote">“This is a premier platform for business growth, innovation, investment, and regional
+          collaboration, let us forge new partnerships, and unlock opportunities that will drive sustainable economic
+          growth and prosperity.”<small>— Callixte Kanamugire, Acting Chief Executive Officer, PSF</small></div>
+      </section>
+
+      <section class="section" id="security">
+        <div class="kicker">11 / Appreciation</div>
+        <h2>Credit to the security organs</h2>
+        <p class="lead">Security organs helped maintain a safe and orderly environment for businesses, visitors and
+          participants, supporting an atmosphere where people could attend, interact, shop, network and enjoy the Expo
+          peacefully.</p>
+      </section>
+
+      <section class="section" id="beauty">
+        <div class="kicker">12 / Beauty & personal care</div>
+        <h2>A different kind of Expo experience</h2>
+        <p class="lead">The beauty and personal-care sector was visibly represented. Movit returned with “The World of
+          Ubwiza”, while Johana Cosmetics showcased Made-in-Rwanda hair and skincare products. The visitor guide also
+          listed exhibitors including Movit Africa, Johana Product, Manebu Industry, Dzetshal Rwanda, Ai Glamor Avenue
+          and Roba Industries.</p>
+      </section>
+
+      <section class="section" id="future">
+        <div class="kicker">13 / Looking ahead</div>
+        <h2>Expo 2027 & the 30-year journey</h2>
+        <p class="lead">The next edition is already ahead. Expo 2027 will create another opportunity to connect,
+          showcase and create new possibilities, while PSF looks toward its 30-years journey.</p>
+        <div class="timeline">
+          <div class="pill"><b>Expo 2026</b>Connections made</div>
+          <div class="pill"><b>Expo 2027</b>The next chapter</div>
+          <div class="pill"><b>30 years</b>A journey to reflect on</div>
+        </div>
+      </section>
+
+      <section class="section" id="investment">
+        <div class="kicker">14 / Beyond the grounds</div>
+        <h2>From exhibition to opportunity</h2>
+        <p class="lead">Relationships created during Expo 2026 can continue long after exhibitors pack up their stands.
+          New connections between businesses, customers, investors and partners can create opportunities for future
+          investment, partnerships and expansion.</p>
+      </section>
+
+      <section class="section" id="youth">
+        <div class="kicker">15 / Youth</div>
+        <h2>More than 2,000 youth got casual jobs</h2>
+        <p class="lead">Young people contributed across different support roles during Expo 2026, gaining income and
+          becoming part of the workforce that helped make the event possible.</p>
+      </section>
+
+      <section class="section" id="conduct">
+        <div class="kicker">16 / Community</div>
+        <h2>Good conduct of the masses</h2>
+        <p class="lead">The calm and peaceful environment allowed people to move around, interact with exhibitors, enjoy
+          activities and conduct business comfortably.</p>
+      </section>
+
+      <section class="section" id="busy">
+        <div class="kicker">17 / Visitor attention</div>
+        <h2>Where everyone wanted to be</h2>
+        <p class="lead">NIDA and Irembo were among the stands that attracted significant attention and activity,
+          providing services and information visitors were interested in accessing.</p>
+      </section>
+
+      <section class="section" id="innovation">
+        <div class="kicker">18 / Ideas in action</div>
+        <h2>Innovation takes centre stage</h2>
+        <p class="lead">Across the exhibition grounds, businesses demonstrated products, services and ideas designed to
+          respond to changing consumer needs and market opportunities—from technology and mobility to new business
+          solutions.</p>
+      </section>
+
+      <section class="section" id="children">
+        <div class="kicker">19 / Families</div>
+        <h2>An adventure for the youngest visitors</h2>
+        <p class="lead">The children's corner gave younger visitors space to play, explore and create memories through
+          games, activities and entertainment.</p>
+      </section>
+
+      <section class="section" id="green">
+        <div class="kicker">20 / The way forward</div>
+        <h2>Building a more sustainable future</h2>
+        <p class="lead">Expo 2026 provided an opportunity to reflect on the role businesses can play in a green economy
+          through more sustainable approaches to production, consumption, transport and investment.</p>
+        <div class="card orange">
+          <h3>How can we build it together?</h3>
+          <p>The way forward brings businesses, policymakers, investors and communities into the conversation around
+            economic growth and environmental responsibility.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">PSF EXPO 2026</div>
+          <div class="footer-note">BUSINESS. INNOVATION. CONNECTION. OPPORTUNITY.</div>
+          <div class="footer-note">See you at Expo 2027.</div>
+          <div><button type="button">Click Me</button></div>
+        </div>
+        <div class="footer-contact">Private Sector Federation Rwanda<br>KK 34 Ave, Kigali,
+          Rwanda<br>secretariat@psf.org.rw · +250 (788) 123-300<br>Toll Free: 2233</div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
