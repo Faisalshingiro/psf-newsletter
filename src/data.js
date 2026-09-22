@@ -75,7 +75,7 @@ export const sections = [
       'The presence of new countries also demonstrated the potential of the Expo as a platform for businesses to discover new markets, products, partnerships and investment opportunities.',
       'For exhibitors and visitors alike, new participation means new conversations \u2014 and potentially, new business relationships.'
     ],
-    tags: ['Ethiopia', 'Senegal', 'Regional trade', 'New markets']
+    // tags: ['Ethiopia', 'Senegal', 'Regional trade', 'New markets']
   },
   {
     id: 'longest',
